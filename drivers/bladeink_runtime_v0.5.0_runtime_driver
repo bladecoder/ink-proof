@@ -1,0 +1,2 @@
+#!/bin/bash
+deps/blade-ink-console-player-0.5.0/bin/blade-ink-console-player $1 | awk '{if(NR==1)sub(/^\xef\xbb\xbf/,"");print}'
